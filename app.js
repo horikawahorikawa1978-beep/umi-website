@@ -1,0 +1,27 @@
+
+const C = window.UMI_CONTENT;
+function txt(id, value){ const el=document.getElementById(id); if(el && value!==undefined) el.textContent=value; }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-company]").forEach(el => el.textContent=C.common.companyName);
+  document.querySelectorAll("[data-contact]").forEach(el => el.href="mailto:"+C.common.contactEmail);
+  document.querySelectorAll("[data-copy]").forEach(el => el.textContent=C.common.copyright);
+
+  txt("home-title", C.home.title); txt("home-subtitle", C.home.subtitle);
+  txt("home-about-title", C.home.aboutTitle); txt("home-about-text", C.home.aboutText);
+
+  txt("why-title", C.philosophy.whyTitle); txt("why-text", C.philosophy.whyText);
+  txt("vision-title", C.philosophy.visionTitle); txt("vision-text", C.philosophy.visionText);
+  txt("mission-title", C.philosophy.missionTitle); txt("mission-text", C.philosophy.missionText);
+  txt("identity-text", C.philosophy.corporateIdentity);
+
+  txt("about-title", C.about.title); txt("about-subtitle", C.about.subtitle);
+  txt("story-title", C.about.storyTitle); txt("story-text", C.about.storyText);
+
+  txt("brand-title", C.brand.title); txt("brand-subtitle", C.brand.subtitle);
+  txt("brand-coming", C.brand.comingSoon); txt("brand-name", C.brand.name);
+  txt("brand-tag", C.brand.tag); txt("brand-copy", C.brand.copy);
+
+  txt("company-title", C.company.title); txt("company-subtitle", C.company.subtitle);
+  txt("company-business", C.company.business); txt("company-website", C.company.website);
+});

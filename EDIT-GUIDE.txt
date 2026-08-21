@@ -1,0 +1,30 @@
+Umi公式サイト 第7版（自分で変更しやすい版）
+
+■ 文字を変える
+content.js だけ編集してください。
+HOME / ABOUT / VISION / BRAND / COMPANY の主要文言を1ファイルにまとめています。
+
+■ 背景画像を変える
+同じファイル名の画像をGitHubで置き換えるだけです。
+home-bg.jpg      = HOME
+about-bg.jpg     = ABOUT
+vision-bg.jpg    = VISION
+brand-bg.jpg     = BRAND
+company-bg.jpg   = COMPANY
+umi-logo.png     = Umiロゴ
+
+■ GitHubへアップロードするファイル
+index.html
+about.html
+vision.html
+brand.html
+company.html
+style.css
+content.js
+app.js
+umi-logo.png
+home-bg.jpg
+about-bg.jpg
+vision-bg.jpg
+brand-bg.jpg
+company-bg.jpg
