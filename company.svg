@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650">
+<defs><linearGradient id="w" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f9f8"/><stop offset="1" stop-color="#dfe7ec"/></linearGradient></defs>
+<rect width="1200" height="650" fill="url(#w)"/>
+<rect x="700" y="0" width="500" height="650" fill="#eef4f8"/>
+<g stroke="#c7d0d7" stroke-width="3"><line x1="810" y1="0" x2="810" y2="650"/><line x1="950" y1="0" x2="950" y2="650"/><line x1="1090" y1="0" x2="1090" y2="650"/></g>
+<rect x="220" y="180" width="480" height="250" rx="8" fill="#dfe3e4"/>
+<text x="460" y="330" text-anchor="middle" font-family="Arial" font-size="86" fill="#0b2b52">Umi</text>
+<circle cx="595" cy="246" r="8" fill="#d5a82e"/>
+<rect x="850" y="420" width="120" height="12" rx="6" fill="#8a969d"/><rect x="890" y="432" width="12" height="90" fill="#8a969d"/>
+<circle cx="1060" cy="410" r="60" fill="#8dae88"/><rect x="1048" y="455" width="24" height="100" fill="#85807a"/>
+</svg>
