@@ -29,9 +29,9 @@ header{height:76px;background:#fff;border-bottom:1px solid rgba(6,36,74,.08);dis
   background-position:center center;
 }
 .hero-inner{min-height:650px;display:flex;align-items:center}
-.hero-copy{width:min(860px,78%);padding:42px 0}
-.hero-logo{width:250px;margin-bottom:36px}
-.hero h1{font-size:clamp(30px,2.9vw,42px);line-height:1.55;font-weight:400;letter-spacing:.02em;margin:0}
+.hero-copy{width:min(650px,62%);padding:46px 0}
+.hero-logo{width:280px;margin-bottom:42px}
+.hero h1{font-size:clamp(32px,3.15vw,48px);line-height:1.55;font-weight:400;letter-spacing:.025em;margin:0}
 .hero h1 span{display:block;white-space:nowrap}
 .gold-line{width:54px;height:2px;background:var(--gold);margin:28px 0}
 .hero p{font-size:16px;line-height:2;color:#526f8d;letter-spacing:.04em;margin:0 0 28px}
@@ -101,8 +101,8 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
   .navlinks .contact{padding:8px 12px}
   .hero,.hero-inner{min-height:620px}
   .hero{background-image:linear-gradient(90deg,rgba(255,255,255,.93),rgba(255,255,255,.50)),url("home-bg.jpg");background-position:62% center}
-  .hero-copy{width:100%;padding:32px 0}.hero-logo{width:205px;margin-bottom:30px}
-  .hero h1{font-size:clamp(26px,6.5vw,34px);line-height:1.5}
+  .hero-copy{width:100%}.hero-logo{width:220px}
+  .hero h1{font-size:clamp(27px,7vw,36px);line-height:1.5}
   .hero h1 span{white-space:normal}
   .next-brand-name{font-size:54px}
   .split{grid-template-columns:1fr;gap:30px}
@@ -111,4 +111,64 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
   .footer{flex-direction:column;justify-content:center;text-align:center;padding:10px 0}
   .footer-links{justify-content:center;gap:18px}
   .footer-logo{width:135px}
+}
+
+/* ===== Umi HOME mobile optimization ===== */
+@media (max-width: 800px) {
+  .hero {
+    background-image: url("home-mobile-bg.jpg") !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    min-height: calc(100svh - 90px);
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,.38) 0%,
+      rgba(255,255,255,.20) 48%,
+      rgba(255,255,255,.04) 100%
+    ) !important;
+  }
+
+  .hero-copy {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 34px 28px 48px !important;
+  }
+
+  .hero-logo {
+    width: min(58vw, 270px) !important;
+    margin-bottom: 42px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(27px, 7.1vw, 36px) !important;
+    line-height: 1.62 !important;
+    letter-spacing: .015em !important;
+  }
+
+  .hero h1 span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-lead,
+  .hero p {
+    font-size: clamp(15px, 4.1vw, 19px) !important;
+    line-height: 1.9 !important;
+    max-width: 92% !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero h1 {
+    font-size: clamp(25px, 6.7vw, 31px) !important;
+  }
+
+  .hero-copy {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
 }
