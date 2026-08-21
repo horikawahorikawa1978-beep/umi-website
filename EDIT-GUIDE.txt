@@ -1,21 +1,27 @@
-Umi公式サイト 第7版（自分で変更しやすい版）
+Umi公式サイト 第8版（PHILOSOPHY版）
 
-■ 文字を変える
-content.js だけ編集してください。
-HOME / ABOUT / VISION / BRAND / COMPANY の主要文言を1ファイルにまとめています。
+変更点
+- ヘッダーの VISION を PHILOSOPHY に変更
+- vision.html の本体を philosophy.html に変更
+- 旧 vision.html は philosophy.html へ自動転送
+- 添付イメージのような WHY / VISION / MISSION の3段レイアウト
+- ネイビー × ゴールド × アイボリーに統一
+- MISSION文言を会社理念向けに変更
+- 主な文言は content.js で編集可能
+- ページ画像は個別差し替え可能
 
-■ 背景画像を変える
-同じファイル名の画像をGitHubで置き換えるだけです。
-home-bg.jpg      = HOME
-about-bg.jpg     = ABOUT
-vision-bg.jpg    = VISION
-brand-bg.jpg     = BRAND
-company-bg.jpg   = COMPANY
-umi-logo.png     = Umiロゴ
+画像差し替え
+home-bg.jpg         HOME
+about-bg.jpg        ABOUT
+philosophy-bg.jpg   PHILOSOPHY背景
+brand-bg.jpg        BRAND
+company-bg.jpg      COMPANY
+umi-logo.png        Umiロゴ
 
-■ GitHubへアップロードするファイル
+GitHubへアップロード
 index.html
 about.html
+philosophy.html
 vision.html
 brand.html
 company.html
@@ -25,6 +31,6 @@ app.js
 umi-logo.png
 home-bg.jpg
 about-bg.jpg
-vision-bg.jpg
+philosophy-bg.jpg
 brand-bg.jpg
 company-bg.jpg
