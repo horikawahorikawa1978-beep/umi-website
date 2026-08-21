@@ -1,19 +1,21 @@
-HOME修正版
+Umi website v9 / HOME + Footer 修正版
 
-アップロードする4ファイル
-- home4-bg.jpg
-- style.css
-- content.js
-- app.js
+今回の変更
+1. HOMEの「ABOUT UMI」重複セクションを削除
+2. HOME下部にコンパクトな「NEXT BRAND / mormee / COMING SOON」を配置
+3. フッターをコンパクト化
+4. フッターのUmiロゴを白＋ゴールド雫の透過PNGに変更
+5. フッター下に © 2026 Umi Inc. を配置
+6. ABOUT / PHILOSOPHY / BRAND / COMPANY の既存ページも同じフッターへ統一
 
-変更点
-1. HOME見出しをPCでは約10〜15%小さくしました。
-2. 見出しを必ず2行で表示:
-   一人ひとりの人生を、
-   もっと自由に、もっと面白く。
-3. HOME背景を2400×1350pxに高解像度化。
-4. 左側を明るく処理し、Umiロゴと文字が読みやすい背景にしています。
-5. 背景ファイル名を home4-bg.jpg に変更して、古い画像キャッシュを回避します。
+GitHubへのアップロード
+このZIP内のファイルをすべてリポジトリ直下へアップロードし、同名ファイルは置き換えてください。
+画像ファイルは削除不要です。home-bg.jpg などは今回そのまま使用します。
 
-GitHubへ4つをそのままアップロード → Commit changes でOKです。
-古い home-bg.jpg / home3-bg.jpg は、新しい表示確認後に削除してOKです。
+今後の編集
+- HOME背景：home-bg.jpg を同じ名前で差し替え
+- ABOUT背景：about-bg.jpg
+- PHILOSOPHY背景：philosophy-bg.jpg
+- BRAND背景：brand-bg.jpg
+- COMPANY背景：company-bg.jpg
+- 理念などの文章：content.js
