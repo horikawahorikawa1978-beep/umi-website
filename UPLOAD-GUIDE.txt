@@ -1,0 +1,17 @@
+Umi公式サイト 第6版（キャッシュ回避・トップ修正版）
+
+今回の原因:
+GitHub Pages / ブラウザが古い style.css や hero.svg を表示している可能性が高かったため、
+ファイル名をすべてV6専用に変更しました。
+
+アップロードするもの:
+index.html
+about.html
+vision.html
+brand.html
+company.html
+style-v6.css
+umi-logo-v6.png
+hero-clean-v6.jpg
+
+古い style.css / hero.svg / ripple.svg / company.svg / hero.jpg は残っていてもV6では使いません。
