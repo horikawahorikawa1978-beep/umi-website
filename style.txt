@@ -1,0 +1,114 @@
+
+:root{
+  --deep:#06244a;
+  --ink:#0b315f;
+  --muted:#6d8198;
+  --gold:#b98a2f;
+  --lav:#f7f3fb;
+  --line:#dfe5eb;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{width:min(1120px,calc(100% - 48px));margin:auto}
+
+/* HEADER */
+header{height:76px;background:#fff;border-bottom:1px solid rgba(6,36,74,.08);display:flex;align-items:center;position:relative;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.nav-logo{width:126px;height:auto}
+.navlinks{display:flex;align-items:center;gap:34px;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em}
+.navlinks .contact{border:1px solid var(--deep);border-radius:30px;padding:12px 20px}
+
+/* HOME HERO */
+.hero{
+  min-height:650px;
+  background-image:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.83) 29%,rgba(255,255,255,.18) 54%,rgba(255,255,255,0) 70%),url("home-bg.jpg");
+  background-size:cover;
+  background-position:center center;
+}
+.hero-inner{min-height:650px;display:flex;align-items:center}
+.hero-copy{width:min(650px,62%);padding:46px 0}
+.hero-logo{width:280px;margin-bottom:42px}
+.hero h1{font-size:clamp(32px,3.15vw,48px);line-height:1.55;font-weight:400;letter-spacing:.025em;margin:0}
+.hero h1 span{display:block;white-space:nowrap}
+.gold-line{width:54px;height:2px;background:var(--gold);margin:28px 0}
+.hero p{font-size:16px;line-height:2;color:#526f8d;letter-spacing:.04em;margin:0 0 28px}
+.btn{display:inline-block;border:1px solid var(--deep);padding:17px 30px;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.15em}
+
+/* COMPACT NEXT BRAND */
+.next-brand{background:linear-gradient(120deg,#fbf9fd,#f1eafb);border-top:1px solid #eee8f4;border-bottom:1px solid #eee8f4}
+.next-brand-link{min-height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:38px 20px;transition:.25s}
+.next-brand-link:hover{background:rgba(255,255,255,.28)}
+.next-brand-kicker,.next-brand-coming{font-family:Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.28em}
+.next-brand-name{font-size:64px;line-height:1;margin:14px 0 8px;color:#b6a2d6}
+.next-brand-tag{font-family:Georgia,serif;font-size:15px;letter-spacing:.14em;color:#8d72b5}
+.next-brand-coming{margin-top:24px;color:var(--deep)}
+.next-brand-coming span{margin-left:8px}
+
+/* GENERIC INNER PAGES */
+.page-hero{padding:68px 0 58px;background:#f7f9fb;border-bottom:1px solid var(--line)}
+.crumb{font-family:Arial,sans-serif;font-size:10px;letter-spacing:.12em;color:#7890a8;margin-bottom:34px}
+.page-hero h1{font-size:58px;font-weight:400;margin:0 0 18px}
+.page-hero p{color:#8191a3}
+.image-band{height:330px;background-size:cover;background-position:center}
+.about-image{background-image:url("about-bg.jpg")}
+.company-image{background-image:url("company-bg.jpg")}
+.content{padding:76px 0}
+.split{display:grid;grid-template-columns:1.15fr .85fr;gap:70px}
+.eyebrow{font-family:Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.25em;margin-bottom:28px}
+.quote,.title{font-size:36px;line-height:1.65;margin:0 0 24px}
+.lead{font-size:15px;line-height:2;color:#647b92}
+.box{background:#f7f9fb;padding:44px}
+.brand-panel{min-height:520px;background:linear-gradient(rgba(248,244,251,.84),rgba(248,244,251,.84)),url("brand-bg.jpg") center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px}
+.coming{font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.28em}
+.mormee{font-size:76px;color:#b5a1d6;margin:18px 0 4px}
+.tag{letter-spacing:.14em;color:#8d72b5}
+.info{margin:0}.row{display:grid;grid-template-columns:180px 1fr;padding:22px 0;border-bottom:1px solid var(--line)}dt{font-weight:700}
+
+/* PHILOSOPHY */
+.philosophy-shell{background:linear-gradient(rgba(255,253,249,.92),rgba(255,253,249,.92)),url("philosophy-bg.jpg") center/cover fixed;padding:70px 20px}
+.philosophy-wrap{max-width:850px;margin:auto}
+.philosophy-card{background:rgba(255,255,255,.82);padding:60px 70px;box-shadow:0 18px 50px rgba(20,45,70,.06)}
+.philosophy-heading{text-align:center;margin-bottom:30px}
+.philosophy-heading .jp{font-size:18px;letter-spacing:.18em}
+.philosophy-heading h1{font-size:50px;font-weight:400;margin:10px 0}
+.rule{width:56px;height:2px;background:var(--gold);margin:22px auto}
+.philo-row{display:grid;grid-template-columns:150px 1fr;gap:34px;padding:36px 0;border-bottom:1px solid rgba(185,138,47,.45)}
+.icon-wrap{display:flex;justify-content:center}
+.philo-icon{width:105px;height:105px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.philo-icon svg{width:68px;fill:none;stroke:var(--ink);stroke-width:1.8}
+.philo-copy .label{font-size:25px;color:var(--gold);letter-spacing:.12em}
+.philo-copy .sub{font-size:19px;font-weight:700;margin:10px 0}
+.philo-copy p{white-space:pre-line;line-height:1.9;margin:0}
+.ripple-mark{text-align:center;padding-top:28px}.ripple-mark svg{width:72px;fill:none;stroke:var(--gold);stroke-width:1.5}
+
+/* FOOTER */
+footer{background:var(--deep);color:#fff;padding:24px 0 14px}
+.footer{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:36px}
+.footer-brand{display:block}
+.footer-logo{width:150px;height:auto}
+.footer-links{display:flex;align-items:center;gap:30px;flex-wrap:wrap;font-family:Arial,sans-serif;font-size:10px;letter-spacing:.16em}
+.footer-links a{opacity:.92}
+.copy{text-align:center;border-top:1px solid rgba(255,255,255,.12);padding-top:12px;margin-top:8px;font-family:Arial,sans-serif;font-size:9px;letter-spacing:.08em;color:rgba(255,255,255,.48)}
+
+@media(max-width:800px){
+  .wrap{width:min(100% - 30px,1120px)}
+  header{height:auto;padding:14px 0}
+  .nav{align-items:flex-start}.nav-logo{width:105px}
+  .navlinks{gap:12px;font-size:9px;flex-wrap:wrap;justify-content:flex-end}
+  .navlinks .contact{padding:8px 12px}
+  .hero,.hero-inner{min-height:620px}
+  .hero{background-image:linear-gradient(90deg,rgba(255,255,255,.93),rgba(255,255,255,.50)),url("home-bg.jpg");background-position:62% center}
+  .hero-copy{width:100%}.hero-logo{width:220px}
+  .hero h1{font-size:clamp(27px,7vw,36px);line-height:1.5}
+  .hero h1 span{white-space:normal}
+  .next-brand-name{font-size:54px}
+  .split{grid-template-columns:1fr;gap:30px}
+  .philosophy-card{padding:40px 24px}
+  .philo-row{grid-template-columns:1fr}.philo-copy{text-align:center}
+  .footer{flex-direction:column;justify-content:center;text-align:center;padding:10px 0}
+  .footer-links{justify-content:center;gap:18px}
+  .footer-logo{width:135px}
+}
