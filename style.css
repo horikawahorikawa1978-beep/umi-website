@@ -29,9 +29,10 @@ header{height:76px;background:#fff;border-bottom:1px solid rgba(6,36,74,.08);dis
   background-position:center center;
 }
 .hero-inner{min-height:650px;display:flex;align-items:center}
-.hero-copy{width:min(650px,62%);padding:46px 0}
-.hero-logo{width:280px;margin-bottom:42px}
-.hero h1{font-size:clamp(36px,4vw,60px);line-height:1.65;font-weight:400;letter-spacing:.035em;margin:0}
+.hero-copy{width:min(860px,78%);padding:42px 0}
+.hero-logo{width:250px;margin-bottom:36px}
+.hero h1{font-size:clamp(30px,2.9vw,42px);line-height:1.55;font-weight:400;letter-spacing:.02em;margin:0}
+.hero h1 span{display:block;white-space:nowrap}
 .gold-line{width:54px;height:2px;background:var(--gold);margin:28px 0}
 .hero p{font-size:16px;line-height:2;color:#526f8d;letter-spacing:.04em;margin:0 0 28px}
 .btn{display:inline-block;border:1px solid var(--deep);padding:17px 30px;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.15em}
@@ -100,8 +101,9 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
   .navlinks .contact{padding:8px 12px}
   .hero,.hero-inner{min-height:620px}
   .hero{background-image:linear-gradient(90deg,rgba(255,255,255,.93),rgba(255,255,255,.50)),url("home-bg.jpg");background-position:62% center}
-  .hero-copy{width:100%}.hero-logo{width:220px}
-  .hero h1{font-size:36px}
+  .hero-copy{width:100%;padding:32px 0}.hero-logo{width:205px;margin-bottom:30px}
+  .hero h1{font-size:clamp(26px,6.5vw,34px);line-height:1.5}
+  .hero h1 span{white-space:normal}
   .next-brand-name{font-size:54px}
   .split{grid-template-columns:1fr;gap:30px}
   .philosophy-card{padding:40px 24px}
