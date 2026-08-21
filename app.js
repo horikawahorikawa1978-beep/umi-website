@@ -1,13 +1,14 @@
 
 const C = window.UMI_CONTENT;
 function txt(id, value){ const el=document.getElementById(id); if(el && value!==undefined) el.textContent=value; }
+function html(id, value){ const el=document.getElementById(id); if(el && value!==undefined) el.innerHTML=value; }
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-company]").forEach(el => el.textContent=C.common.companyName);
   document.querySelectorAll("[data-contact]").forEach(el => el.href="mailto:"+C.common.contactEmail);
   document.querySelectorAll("[data-copy]").forEach(el => el.textContent=C.common.copyright);
 
-  txt("home-title", C.home.title);
+  html("home-title", C.home.title);
   txt("home-subtitle", C.home.subtitle);
   txt("home-about-title", C.home.aboutTitle);
   txt("home-about-text", C.home.aboutText);
