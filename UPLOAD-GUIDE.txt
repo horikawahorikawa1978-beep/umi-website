@@ -1,0 +1,17 @@
+Umi公式サイト 第5版
+- 正式Umiロゴ使用
+- ロゴ背景を透過PNGで使用
+- WHY / VISION / MISSION文言を以前の確定内容に統一
+- mormeeは商品画像なし、COMING SOON表示
+- HOME / ABOUT / VISION / BRAND / COMPANY の5ページ構成
+- GitHub用フォルダなし構成
+
+GitHubにアップロードするファイル:
+index.html
+about.html
+vision.html
+brand.html
+company.html
+style.css
+umi-logo.png
+hero.jpg
