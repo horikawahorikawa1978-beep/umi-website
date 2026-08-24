@@ -1,21 +1,15 @@
-Umi website v9 / HOME + Footer 修正版
+Umi ABOUTページ v2
 
-今回の変更
-1. HOMEの「ABOUT UMI」重複セクションを削除
-2. HOME下部にコンパクトな「NEXT BRAND / mormee / COMING SOON」を配置
-3. フッターをコンパクト化
-4. フッターのUmiロゴを白＋ゴールド雫の透過PNGに変更
-5. フッター下に © 2026 Umi Inc. を配置
-6. ABOUT / PHILOSOPHY / BRAND / COMPANY の既存ページも同じフッターへ統一
+今回の構成は「画像」と「文字」を完全に分離しています。
 
-GitHubへのアップロード
-このZIP内のファイルをすべてリポジトリ直下へアップロードし、同名ファイルは置き換えてください。
-画像ファイルは削除不要です。home-bg.jpg などは今回そのまま使用します。
+GitHubへアップロードする3ファイル
+1. about.html
+2. style.css
+3. about-visual.jpg
 
-今後の編集
-- HOME背景：home-bg.jpg を同じ名前で差し替え
-- ABOUT背景：about-bg.jpg
-- PHILOSOPHY背景：philosophy-bg.jpg
-- BRAND背景：brand-bg.jpg
-- COMPANY背景：company-bg.jpg
-- 理念などの文章：content.js
+画像を変えるとき
+- 新しい画像を about-visual.jpg という同じ名前で差し替えるだけです。
+- ABOUTの文章や「Umiの大切にしていること」は about.html 内の文字を直接編集できます。
+- 画像には文字を一切焼き込んでいません。
+
+HOME・PHILOSOPHY・BRAND・COMPANYのファイルは今回は触りません。
