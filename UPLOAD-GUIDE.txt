@@ -1,16 +1,19 @@
-Umi BRAND / mormee 採用版
+Umi COMPANY ホームページ実装用
 
-今回の仕様
-・採用したデザインをそのまま brand-mormee-hero.png に使用
-・mormeeロゴ、Good morning, me.、朝の私を、好きになる。、ミスト美容液、COMING SOON は画像内
-・そのためロゴがHTMLフォントで崩れたりガタついたりしません
+重要：前回BRANDでstyle.css全体を上書きして他ページが崩れたため、
+今回は style.css 本体をZIPに入れていません。
 
-GitHubへ
-1. brand.html → 上書き
-2. style.css → 既存サイト全体のCSSを使っている場合は、このファイルを丸ごと上書きせず
-   BRAND用部分だけ統合してください
-3. brand-mormee-hero.png → 新規追加/上書き
+アップロード手順
+1. company.html → GitHubの company.html に上書き
+2. COMPANY-CSS-ADD.txt の中身を全部コピー
+3. 現在正常に動いている style.css の「一番最後」に貼り付けてCommit
+4. umi-logo.png / umi-logo-footer.png は既存ファイルをそのまま使用
+
+削除するファイル
+・今回はなし
 
 注意
-COMING SOONも今回は背景画像内です。
-発売時にはCOMING SOONなしの画像へ差し替える必要があります。
+・style.cssの既存内容は削除しない
+・HOME / ABOUT / PHILOSOPHY / BRAND のHTMLや画像は触らない
+・お問い合わせメールは、入力に「info@umi-beauty..com」とドットが2つありましたが、
+  既存サイトで使用している「info@umi-beauty.com」に統一しています。

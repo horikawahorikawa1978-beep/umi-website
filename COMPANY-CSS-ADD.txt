@@ -1,0 +1,37 @@
+/* ===== COMPANY PAGE：現在の正常な style.css の一番最後に追加 ===== */
+.navlinks .is-current{position:relative}
+.navlinks .is-current::after{content:"";position:absolute;left:50%;bottom:-12px;width:34px;height:1px;background:var(--gold);transform:translateX(-50%)}
+
+.company-page{background:#fff}
+.company-hero{min-height:355px;display:flex;align-items:center;background:linear-gradient(110deg,#f7f4ef 0%,#fff 56%,#f0eee8 100%);position:relative;overflow:hidden}
+.company-hero:after{content:"";position:absolute;right:-3%;top:-20%;width:38%;height:150%;background:radial-gradient(ellipse at center,rgba(120,145,100,.15),transparent 65%);transform:rotate(-14deg)}
+.company-hero-inner{position:relative;z-index:1;width:100%}
+.company-kicker{font-family:Georgia,serif;font-size:48px;letter-spacing:.06em;color:var(--deep);margin:0 0 8px}
+.company-hero h1{font-size:21px;font-weight:400;letter-spacing:.24em;margin:0;color:var(--deep)}
+.company-gold-line{width:34px;height:1px;background:var(--gold);margin-top:28px}
+.company-profile{padding:64px 0 72px}
+.company-profile-inner{max-width:900px}
+.company-lead{text-align:center;font-size:19px;letter-spacing:.06em;line-height:2;margin:0 0 48px;color:var(--deep)}
+.company-table{margin:0;background:#fff;border:1px solid #eee9e2;border-radius:10px;padding:18px 30px;box-shadow:0 10px 30px rgba(6,36,74,.06)}
+.company-table>div{display:grid;grid-template-columns:180px 1fr;border-bottom:1px solid #e4e5e8;min-height:78px;align-items:center}
+.company-table>div:last-child{border-bottom:0}
+.company-table dt{font-size:15px;letter-spacing:.08em;padding-left:20px;color:var(--deep)}
+.company-table dd{margin:0;padding:0 30px;border-left:1px solid #e4e5e8;font-size:17px;letter-spacing:.04em;line-height:1.7}
+.company-table a{color:inherit}
+.company-closing{text-align:center;padding:48px 20px 52px;background:linear-gradient(120deg,#faf8f4,#fff,#f4f1eb);color:var(--deep)}
+.company-closing p{font-size:17px;line-height:2;letter-spacing:.07em;margin:0}
+.company-closing .company-gold-line{margin:28px auto 0}
+
+@media(max-width:700px){
+ .navlinks .is-current::after{display:none}
+ .company-hero{min-height:260px}
+ .company-kicker{font-size:38px}
+ .company-hero h1{font-size:17px}
+ .company-profile{padding:44px 0 50px}
+ .company-lead{font-size:15px;text-align:left;margin-bottom:30px}
+ .company-table{padding:8px 18px}
+ .company-table>div{grid-template-columns:105px 1fr;min-height:68px}
+ .company-table dt{font-size:13px;padding-left:0}
+ .company-table dd{font-size:14px;padding-left:18px;padding-right:0;word-break:break-word}
+ .company-closing p{font-size:14px}
+}
