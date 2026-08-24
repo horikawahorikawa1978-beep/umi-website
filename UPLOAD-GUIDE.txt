@@ -1,4 +1,16 @@
-アップロード：brand.html / style.css / brand-mormee-bg.jpg / mormee-logo.png
-背景・ロゴ・文字は別々です。
-発売時は brand.html の <p class="mormee-coming-soon">COMING SOON</p> の1行だけ削除してください。
-旧BRAND背景は表示確認後に削除OK。HOME/ABOUT/PHILOSOPHY用画像は削除しないでください。
+Umi BRAND / mormee 採用版
+
+今回の仕様
+・採用したデザインをそのまま brand-mormee-hero.png に使用
+・mormeeロゴ、Good morning, me.、朝の私を、好きになる。、ミスト美容液、COMING SOON は画像内
+・そのためロゴがHTMLフォントで崩れたりガタついたりしません
+
+GitHubへ
+1. brand.html → 上書き
+2. style.css → 既存サイト全体のCSSを使っている場合は、このファイルを丸ごと上書きせず
+   BRAND用部分だけ統合してください
+3. brand-mormee-hero.png → 新規追加/上書き
+
+注意
+COMING SOONも今回は背景画像内です。
+発売時にはCOMING SOONなしの画像へ差し替える必要があります。
