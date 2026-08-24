@@ -1,31 +1,4 @@
-Umi BRAND / mormee v1
-
-確定構成
-mormee ロゴ
-Good morning, me.
-朝の私を、好きになる。
-ミスト美容液
-COMING SOON
-
-画像と文字は完全に別々です。
-
-GitHubへアップロード
-1. brand.html → 上書き
-2. style.css → 上書き
-3. brand-visual.jpg → 新規追加
-4. mormee-logo.png → 新規追加
-
-mormee-logo.png
-・添付いただいた正式ロゴの太陽マーク形状を使用
-・背景透明
-・Web用に高解像度化
-
-削除
-・旧 brand-bg.jpg が残っている場合、新ページでは使用しないため
-  表示確認後に削除してOKです。
-・その他は削除しないでください。
-
-変更方法
-・背景／商品画像 → brand-visual.jpg を同名で差し替え
-・mormeeロゴ → mormee-logo.png を同名で差し替え
-・文言 → brand.html を編集
+アップロード：brand.html / style.css / brand-mormee-bg.jpg / mormee-logo.png
+背景・ロゴ・文字は別々です。
+発売時は brand.html の <p class="mormee-coming-soon">COMING SOON</p> の1行だけ削除してください。
+旧BRAND背景は表示確認後に削除OK。HOME/ABOUT/PHILOSOPHY用画像は削除しないでください。
