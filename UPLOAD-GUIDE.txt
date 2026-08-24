@@ -1,25 +1,15 @@
-Umi PHILOSOPHY v2 ホームページ用
+Umi HOME 背景レスポンシブ修正版
 
-今回の変更
-・確定デザインをホームページ化
-・PHILOSOPHY上部は「海」ではなく、光＋植物の写真
-・WHY / VISION / MISSION / STORY は写真を使わず、HTML/SVGアイコン
-・画像と文字は完全に別々
-・スマホ表示にも対応
-・HOME / ABOUTの既存CSSはそのまま保持
+アップロードするファイル
+・style.css → GitHub上の既存 style.css を上書き
 
-GitHubへアップロード／上書きする3ファイル
-1. philosophy.html     → 上書き
-2. style.css           → 上書き
-3. philosophy-visual.jpg → 新規アップロード
+変更内容
+・769px以上：home-bg.jpg を常に使用
+・768px以下：home-mobile-bg.png を使用
+・800px以下にあった中間サイズ用の背景上書きを削除
+・HOMEの文字、ABOUT、PHILOSOPHY等の既存設定は変更していません
 
-削除について
-・古い philosophy-bg.jpg は、新ページでは使用しません。
-  表示確認後に削除してOKです。
-・content.js / app.js は他ページで使う可能性があるため削除しないでください。
-・その他の home-bg / about-visual / company-bg なども削除しないでください。
+削除するファイル
+・なし
 
-今後の変更
-・上部写真だけ変える → philosophy-visual.jpg を同名で差し替え
-・WHY / VISION / MISSION / STORY の文章を変える → philosophy.html を編集
-・アイコンサイズを変える → style.css の .philosophy-icon を編集
+※ home-bg.jpg と home-mobile-bg.png はそのまま残してください。

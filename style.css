@@ -100,7 +100,7 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
   .navlinks{gap:12px;font-size:9px;flex-wrap:wrap;justify-content:flex-end}
   .navlinks .contact{padding:8px 12px}
   .hero,.hero-inner{min-height:620px}
-  .hero{background-image:linear-gradient(90deg,rgba(255,255,255,.93),rgba(255,255,255,.50)),url("home-bg.jpg");background-position:62% center}
+  
   .hero-copy{width:100%}.hero-logo{width:220px}
   .hero h1{font-size:clamp(27px,7vw,36px);line-height:1.5}
   .hero h1 span{white-space:normal}
@@ -358,6 +358,19 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
   }
 }
 
+
+/* =========================================================
+   HOME responsive background fix
+   769px and wider: PC background / 768px and narrower: mobile
+   ========================================================= */
+@media (min-width: 769px){
+  .hero{
+    background-image:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.83) 29%,rgba(255,255,255,.18) 54%,rgba(255,255,255,0) 70%),url("home-bg.jpg");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+  }
+}
 
 /* =========================================================
    HOME mobile background
