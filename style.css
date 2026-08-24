@@ -31,7 +31,7 @@ header{height:76px;background:#fff;border-bottom:1px solid rgba(6,36,74,.08);dis
 .hero-inner{min-height:650px;display:flex;align-items:center}
 .hero-copy{width:min(650px,62%);padding:46px 0}
 .hero-logo{width:280px;margin-bottom:42px}
-.hero h1{font-size:clamp(32px,3.15vw,48px);line-height:1.55;font-weight:400;letter-spacing:.025em;margin:0}
+.hero h1{font-size:clamp(32px,3.15vw,38px);line-height:1.55;font-weight:400;letter-spacing:.025em;margin:0}
 .hero h1 span{display:block;white-space:nowrap}
 .gold-line{width:54px;height:2px;background:var(--gold);margin:28px 0}
 .hero p{font-size:16px;line-height:2;color:#526f8d;letter-spacing:.04em;margin:0 0 28px}
