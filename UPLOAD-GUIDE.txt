@@ -1,22 +1,31 @@
-Umi HOME 背景切替 完全修正版
+Umi BRAND / mormee v1
 
-今回の原因
-ブラウザ幅が変わると、CSSが別の背景ファイルへ切り替わっていました。
-小さい幅では home-mobile-bg.png が表示されている一方、
-大きい幅では home-bg.jpg を読みに行くため、PC側画像が無い／違う場合に白く見えていました。
+確定構成
+mormee ロゴ
+Good morning, me.
+朝の私を、好きになる。
+ミスト美容液
+COMING SOON
 
-今回の修正
-・769px以上 → home-desktop-bg.png
-・768px以下 → home-mobile-bg.png
-・背景指定をCSS末尾で一元化
-・競合しないよう !important を背景関連だけに使用
-・PHILOSOPHY / ABOUT等のCSSは維持
+画像と文字は完全に別々です。
 
 GitHubへアップロード
-1. style.css → 上書き
-2. home-desktop-bg.png → 新規追加
-3. home-mobile-bg.png → 同名があれば上書き
+1. brand.html → 上書き
+2. style.css → 上書き
+3. brand-visual.jpg → 新規追加
+4. mormee-logo.png → 新規追加
 
-削除について
-・確認後、古い home-bg.jpg はもう使わないので削除してOKです。
-・それ以外は削除しないでください。
+mormee-logo.png
+・添付いただいた正式ロゴの太陽マーク形状を使用
+・背景透明
+・Web用に高解像度化
+
+削除
+・旧 brand-bg.jpg が残っている場合、新ページでは使用しないため
+  表示確認後に削除してOKです。
+・その他は削除しないでください。
+
+変更方法
+・背景／商品画像 → brand-visual.jpg を同名で差し替え
+・mormeeロゴ → mormee-logo.png を同名で差し替え
+・文言 → brand.html を編集

@@ -685,3 +685,157 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
     background-repeat:no-repeat !important;
   }
 }
+
+
+/* =========================================================
+   BRAND / mormee v1
+   Image, logo and text are separate
+   ========================================================= */
+
+.brand-page{
+  background:#fff;
+}
+
+.brand-mormee{
+  min-height:760px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  background:linear-gradient(135deg,#fbf9fc 0%,#f6f0fa 52%,#f9f5fb 100%);
+}
+
+.brand-mormee-visual{
+  position:absolute;
+  inset:0;
+  background-image:url("brand-visual.jpg");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+.brand-mormee:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,
+    rgba(250,248,252,.98) 0%,
+    rgba(250,248,252,.94) 30%,
+    rgba(250,248,252,.58) 49%,
+    rgba(250,248,252,.06) 72%);
+  pointer-events:none;
+}
+
+.brand-mormee-copy{
+  position:relative;
+  z-index:2;
+  width:min(560px,44vw);
+  margin-left:max(64px,8vw);
+  text-align:center;
+  color:#9f88bb;
+}
+
+.mormee-logo{
+  width:min(390px,100%);
+  height:auto;
+  display:block;
+  margin:0 auto 12px;
+}
+
+.mormee-tagline{
+  margin:0;
+  font-family:Arial,sans-serif;
+  font-size:18px;
+  letter-spacing:.16em;
+  color:#8f75ad;
+}
+
+.brand-gold-line{
+  width:46px;
+  height:2px;
+  background:var(--gold);
+  margin:34px auto 32px;
+}
+
+.brand-mormee h1{
+  margin:0;
+  font-weight:400;
+  font-size:clamp(30px,3vw,46px);
+  line-height:1.55;
+  letter-spacing:.06em;
+  color:#9a82b7;
+}
+
+.mormee-category{
+  margin:24px 0 0;
+  font-size:18px;
+  letter-spacing:.18em;
+  color:#977caf;
+}
+
+.mormee-coming{
+  margin:56px 0 0;
+  font-family:Arial,sans-serif;
+  font-size:24px;
+  letter-spacing:.32em;
+  color:#9176ac;
+}
+
+@media(max-width:900px){
+  .brand-mormee{
+    min-height:720px;
+  }
+  .brand-mormee-copy{
+    width:min(520px,52vw);
+    margin-left:5vw;
+  }
+  .mormee-logo{
+    width:min(330px,100%);
+  }
+}
+
+@media(max-width:650px){
+  .brand-mormee{
+    min-height:760px;
+    align-items:flex-start;
+    padding-top:80px;
+  }
+
+  .brand-mormee-visual{
+    background-position:68% center;
+  }
+
+  .brand-mormee:after{
+    background:linear-gradient(180deg,
+      rgba(250,248,252,.97) 0%,
+      rgba(250,248,252,.88) 48%,
+      rgba(250,248,252,.28) 72%,
+      rgba(250,248,252,.04) 100%);
+  }
+
+  .brand-mormee-copy{
+    width:calc(100% - 40px);
+    margin:0 auto;
+  }
+
+  .mormee-logo{
+    width:265px;
+  }
+
+  .mormee-tagline{
+    font-size:14px;
+  }
+
+  .brand-mormee h1{
+    font-size:31px;
+  }
+
+  .mormee-category{
+    font-size:15px;
+  }
+
+  .mormee-coming{
+    font-size:19px;
+    margin-top:42px;
+  }
+}
