@@ -229,8 +229,8 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
 }
 
 .about-value-icon{
-  width:66px;
-  height:66px;
+  width:28px;
+  height:28px;
   border:1px solid #476b8d;
   border-radius:50%;
   display:flex;
