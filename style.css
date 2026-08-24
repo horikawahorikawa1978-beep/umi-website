@@ -357,3 +357,17 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
     grid-column:auto;
   }
 }
+
+
+/* =========================================================
+   HOME mobile background
+   PC: existing home-bg.jpg / Mobile: home-mobile-bg.png
+   ========================================================= */
+@media (max-width: 768px){
+  .hero{
+    background-image:url("home-mobile-bg.png");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+  }
+}

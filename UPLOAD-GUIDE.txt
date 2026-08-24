@@ -1,18 +1,13 @@
-Umi ABOUT v4
+Umi HOME スマホ背景対応
 
-今回の変更
-- 添付イメージに近い横長レイアウトへ調整
-- 左35%：ABOUTの文字
-- 右65%：海＋花瓶の画像
-- 画像と文字は完全に別々
-- 「美しさから、／毎日をもっと面白く。」はPCで2行固定
-- 右画像はABOUT表示比率に合わせた専用サイズに作り直し
-- 「Umiの大切にしていること」のアイコンを44pxに縮小
-- 下部5項目もコンパクト化
+GitHubへアップロード／上書きするファイル
+1. style.css → 既存の style.css を上書き
+2. home-mobile-bg.png → 新規アップロード
 
-GitHubでアップロード
-1. about.html
-2. style.css
-3. about-visual.jpg
+削除するファイル
+なし
 
-古い about-bg.jpg は不要なら削除してOKです。
+変更内容
+・PC版は現在の home-bg.jpg のまま
+・画面幅768px以下だけ home-mobile-bg.png に切り替え
+・HOMEのロゴ、メインコピー、説明文、ボタンなど文字は変更なし
