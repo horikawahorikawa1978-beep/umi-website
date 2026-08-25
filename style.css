@@ -920,3 +920,87 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
  .company-table dd{font-size:14px;padding-left:18px;padding-right:0;word-break:break-word}
  .company-closing p{font-size:14px}
 }
+
+/* =========================================================
+   COMPANY v2 SAFE
+   現在の正常な style.css の一番最後に追加
+   ========================================================= */
+
+.company-v2{background:#fff;color:var(--deep)}
+.company-v2-hero{position:relative;min-height:420px;overflow:hidden;background:#f9f7f3}
+.company-v2-hero-bg{
+  position:absolute;inset:0;
+  background-image:url("company-visual.jpg");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.company-v2-hero-inner{
+  position:relative;z-index:2;
+  width:min(1120px,calc(100% - 48px));
+  min-height:420px;margin:0 auto;
+  display:flex;align-items:center;
+}
+.company-v2-hero-copy{width:48%;text-align:left}
+.company-v2-en{
+  margin:0;color:var(--deep);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(44px,5vw,66px);
+  line-height:1;letter-spacing:.05em;
+}
+.company-v2-hero h1{
+  margin:18px 0 0;color:var(--deep);
+  font-size:20px;font-weight:400;letter-spacing:.28em;
+}
+.company-v2-gold-line{width:44px;height:1px;margin-top:28px;background:var(--gold)}
+
+.company-v2-profile{padding:70px 0 78px;background:#fff}
+.company-v2-container{width:min(900px,calc(100% - 48px));margin:0 auto}
+.company-v2-lead{
+  margin:0 0 48px;text-align:center;color:var(--deep);
+  font-size:18px;line-height:2;letter-spacing:.06em;
+}
+.company-v2-table{
+  margin:0;padding:20px 30px;border:1px solid #ece8e2;border-radius:10px;
+  background:#fff;box-shadow:0 12px 34px rgba(6,36,74,.06);
+}
+.company-v2-table>div{
+  display:grid;grid-template-columns:180px 1fr;min-height:78px;
+  align-items:center;border-bottom:1px solid #e4e5e8;
+}
+.company-v2-table>div:last-child{border-bottom:none}
+.company-v2-table dt{
+  margin:0;padding-left:16px;color:var(--deep);
+  font-size:15px;font-weight:500;letter-spacing:.08em;
+}
+.company-v2-table dd{
+  margin:0;padding:0 28px;border-left:1px solid #e4e5e8;
+  color:var(--deep);font-size:17px;line-height:1.8;letter-spacing:.04em;
+}
+.company-v2-table a{color:inherit;text-decoration:none}
+.company-v2-closing{
+  padding:54px 20px 58px;text-align:center;
+  background:linear-gradient(120deg,#faf8f4 0%,#fff 55%,#f4f1eb 100%);
+}
+.company-v2-closing p{
+  margin:0;color:var(--deep);font-size:17px;line-height:2;letter-spacing:.07em;
+}
+.company-v2-closing .company-v2-gold-line{margin:28px auto 0}
+
+@media(max-width:700px){
+  .company-v2-hero{min-height:300px}
+  .company-v2-hero-bg{background-position:65% center}
+  .company-v2-hero-inner{min-height:300px;width:calc(100% - 36px)}
+  .company-v2-hero-copy{width:60%}
+  .company-v2-en{font-size:39px}
+  .company-v2-hero h1{margin-top:14px;font-size:15px;letter-spacing:.22em}
+  .company-v2-profile{padding:46px 0 52px}
+  .company-v2-container{width:calc(100% - 36px)}
+  .company-v2-lead{margin-bottom:30px;text-align:left;font-size:14px;line-height:1.9}
+  .company-v2-table{padding:8px 18px}
+  .company-v2-table>div{grid-template-columns:104px 1fr;min-height:68px}
+  .company-v2-table dt{padding-left:0;font-size:13px}
+  .company-v2-table dd{padding:0 0 0 16px;font-size:14px;word-break:break-word}
+  .company-v2-closing{padding:40px 26px 44px}
+  .company-v2-closing p{font-size:14px;line-height:1.9}
+}
