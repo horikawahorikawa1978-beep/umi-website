@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded",()=>{
  Object.entries(map).forEach(([id,key])=>{const el=document.getElementById(id);if(el&&c[key]!=null)el.textContent=c[key]});
  document.querySelectorAll("[data-company]").forEach(el=>el.textContent=c.companyName||"Umi株式会社");
  document.querySelectorAll("[data-copy]").forEach(el=>el.textContent="© 2026 Umi Inc.");
- document.querySelectorAll("[data-contact]").forEach(el=>el.href="mailto:info@umi-beauty.com");
+ document.querySelectorAll("[data-contact]").forEach(el=>el.href="contact.html");
 });

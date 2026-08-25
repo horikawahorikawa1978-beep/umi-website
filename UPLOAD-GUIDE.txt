@@ -1,19 +1,24 @@
-Umi COMPANY ホームページ実装用
+Umi公式サイト GitHub 安全更新版
 
-重要：前回BRANDでstyle.css全体を上書きして他ページが崩れたため、
-今回は style.css 本体をZIPに入れていません。
+【最重要】
+GitHub上の現在のファイルを削除してから入れ直さないでください。
+このZIPを展開し、同名ファイルを上書きアップロードしてください。
 
-アップロード手順
-1. company.html → GitHubの company.html に上書き
-2. COMPANY-CSS-ADD.txt の中身を全部コピー
-3. 現在正常に動いている style.css の「一番最後」に貼り付けてCommit
-4. umi-logo.png / umi-logo-footer.png は既存ファイルをそのまま使用
+【安全な手順】
+1. GitHubの現在のリポジトリをZIPでバックアップ（Code → Download ZIP）
+2. このZIPをPCで展開
+3. 展開した「中身」だけをGitHubリポジトリのルートへアップロード
+4. 同名ファイルは上書き、新規の contact.html は追加
+5. Commit changes
+6. 公開サイトで HOME / ABOUT / PHILOSOPHY / BRAND / COMPANY / CONTACT を確認
+7. CONTACTフォームは自分のメールアドレスで1回だけテスト送信
 
-削除するファイル
-・今回はなし
+【今回の確認済み内容】
+・HOME / ABOUT / PHILOSOPHY / BRAND / COMPANY のヘッダー/フッター CONTACT → contact.html に統一
+・contact.html → Formspree (mnpakvyg) 設定済み
+・COMPANYページ内のメールアドレス表示は mailto:info@umi-beauty.com のまま（意図的）
+・style.css はページ別CSSを含む統合済み版
+・必要画像とロゴを同梱
 
-注意
-・style.cssの既存内容は削除しない
-・HOME / ABOUT / PHILOSOPHY / BRAND のHTMLや画像は触らない
-・お問い合わせメールは、入力に「info@umi-beauty..com」とドットが2つありましたが、
-  既存サイトで使用している「info@umi-beauty.com」に統一しています。
+【戻したい場合】
+手順1で保存したバックアップZIPの内容をGitHubへ戻せば復旧できます。
