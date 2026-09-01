@@ -1,24 +1,40 @@
-Umi公式サイト GitHub 安全更新版
+Umi公式サイト NEWS追加版
+作成日：2026-08-31
 
-【最重要】
-GitHub上の現在のファイルを削除してから入れ直さないでください。
-このZIPを展開し、同名ファイルを上書きアップロードしてください。
+【追加した内容】
+・ヘッダー / フッターに「NEWS」を追加
+・HOME下部に「LATEST NEWS」を追加
+・news.html（NEWS一覧ページ）を追加
+・news-20260831.html（記事詳細ページ）を追加
+・公開済みPR TIMES記事へのリンクを設定
+  https://prtimes.jp/main/html/rd/p/000000003.000189914.html
+・CONTACTリンクは既存の contact.html に統一
 
-【安全な手順】
-1. GitHubの現在のリポジトリをZIPでバックアップ（Code → Download ZIP）
-2. このZIPをPCで展開
-3. 展開した「中身」だけをGitHubリポジトリのルートへアップロード
-4. 同名ファイルは上書き、新規の contact.html は追加
-5. Commit changes
-6. 公開サイトで HOME / ABOUT / PHILOSOPHY / BRAND / COMPANY / CONTACT を確認
-7. CONTACTフォームは自分のメールアドレスで1回だけテスト送信
+【GitHubへアップロードするファイル】
+index.html
+about.html
+philosophy.html
+brand.html
+company.html
+contact.html
+news.html
+news-20260831.html
+style.css
 
-【今回の確認済み内容】
-・HOME / ABOUT / PHILOSOPHY / BRAND / COMPANY のヘッダー/フッター CONTACT → contact.html に統一
-・contact.html → Formspree (mnpakvyg) 設定済み
-・COMPANYページ内のメールアドレス表示は mailto:info@umi-beauty.com のまま（意図的）
-・style.css はページ別CSSを含む統合済み版
-・必要画像とロゴを同梱
+【安全にCSSだけ追記したい場合】
+現在GitHub上の style.css をそのまま残したい場合は、
+このZIP内の style.css を上書きせず、
+NEWS-CSS-ADD.txt の中身を現在の style.css の一番最後に貼り付けてください。
 
-【戻したい場合】
-手順1で保存したバックアップZIPの内容をGitHubへ戻せば復旧できます。
+【今後NEWSを増やす方法】
+1. news-20260831.html をコピーして日付入りの名前に変更
+   例：news-20260915.html
+2. 日付 / カテゴリー / タイトル / 本文 / 外部URLを変更
+3. news.html の <article class="news-card">...</article> をコピーして新記事を一番上に追加
+4. HOMEの「LATEST NEWS」は最新3件程度まで表示するのがおすすめ
+
+【カテゴリー例】
+PRESS RELEASE
+BRAND
+MEDIA
+COMPANY
