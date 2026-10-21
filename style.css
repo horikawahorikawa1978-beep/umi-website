@@ -1164,3 +1164,65 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
   .news-detail-body p{font-size:14px}
   .prtimes-button{width:100%;justify-content:space-between}
 }
+
+
+/* =========================================================
+   Umi message refinement — HOME / ABOUT
+   Keeps existing photos, structure and brand colors unchanged.
+   ========================================================= */
+
+/* Clear type rhythm in the HOME hero without changing the imagery. */
+.hero-copy h1 {
+  overflow-wrap: normal;
+}
+
+/* ABOUT: the three guiding principles remain an editorial statement. */
+.about-intro-copy .about-belief {
+  margin: 28px 0 27px;
+  color: var(--deep);
+  font-size: clamp(17px, 1.55vw, 21px);
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: .045em;
+}
+
+/* The founding words are a closing signature, not ordinary body text. */
+.about-intro-copy .about-closing-message {
+  margin: 36px 0 0;
+  padding-top: 25px;
+  position: relative;
+  color: var(--deep);
+  font-size: clamp(18px, 1.65vw, 23px);
+  font-weight: 600;
+  line-height: 1.85;
+  letter-spacing: .04em;
+}
+.about-intro-copy .about-closing-message::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+}
+
+@media (max-width: 850px) {
+  .about-intro-copy .about-closing-message {
+    font-size: 21px;
+    margin-top: 31px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-copy h1 { font-size: clamp(26px, 6.7vw, 34px); }
+  .about-intro-copy .about-belief {
+    font-size: 18px;
+    line-height: 1.95;
+    margin: 24px 0;
+  }
+  .about-intro-copy .about-closing-message {
+    font-size: 19px;
+    margin-top: 28px;
+    padding-top: 22px;
+  }
+}
