@@ -1453,3 +1453,33 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
     background-position:66% center !important;
   }
 }
+
+/* BRAND hero emergency fix */
+.mormee-hero-copy{overflow:hidden}
+.mormee-official-logo{
+  width:min(300px,72%) !important;
+  max-width:300px !important;
+  height:auto !important;
+  margin:0 auto 30px !important;
+  object-fit:contain !important;
+  mix-blend-mode:normal !important;
+}
+.mormee-hero h1{
+  white-space:nowrap;
+  font-size:clamp(26px,2.6vw,40px) !important;
+}
+@media(max-width:900px){
+  .mormee-hero h1{white-space:normal}
+}
+@media(max-width:600px){
+  .mormee-official-logo{
+    width:min(250px,80%) !important;
+    max-width:250px !important;
+    margin-bottom:24px !important;
+  }
+  .mormee-hero h1{
+    font-size:28px !important;
+    line-height:1.55 !important;
+    white-space:normal !important;
+  }
+}
