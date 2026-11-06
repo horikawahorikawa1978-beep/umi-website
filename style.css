@@ -1483,3 +1483,99 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
     white-space:normal !important;
   }
 }
+
+
+/* =========================================================
+   BRAND HERO FINAL SAFE FIX
+   No embedded/broken image logo.
+   Crop the existing valid brand visual to product-only area.
+   ========================================================= */
+.mormee-logo-lockup{
+  width:min(390px,82%);
+  margin:0 auto 30px;
+  text-align:center;
+  color:#8f75ad;
+}
+.mormee-logo-word{
+  margin-top:3px;
+  font-family:"Trebuchet MS","Arial Rounded MT Bold",Arial,sans-serif;
+  font-size:66px;
+  font-weight:300;
+  line-height:.95;
+  letter-spacing:.08em;
+}
+.mormee-logo-tagline{
+  margin-top:13px;
+  font-family:Arial,sans-serif;
+  font-size:15px;
+  letter-spacing:.12em;
+}
+.mormee-sun-mark{
+  position:relative;
+  width:112px;
+  height:62px;
+  margin:0 auto 4px;
+}
+.mormee-sun-mark .sun-arc{
+  position:absolute;
+  left:24px;bottom:0;
+  width:64px;height:32px;
+  border:4px solid #8f75ad;
+  border-bottom:0;
+  border-radius:64px 64px 0 0;
+}
+.mormee-sun-mark .ray{
+  position:absolute;
+  left:54px;top:2px;
+  width:4px;height:17px;
+  background:#8f75ad;
+  border-radius:3px;
+  transform-origin:2px 51px;
+}
+.mormee-sun-mark .r1{transform:rotate(-66deg)}
+.mormee-sun-mark .r2{transform:rotate(-44deg)}
+.mormee-sun-mark .r3{transform:rotate(-22deg)}
+.mormee-sun-mark .r4{transform:rotate(0deg)}
+.mormee-sun-mark .r5{transform:rotate(22deg)}
+.mormee-sun-mark .r6{transform:rotate(44deg)}
+.mormee-sun-mark .r7{transform:rotate(66deg)}
+
+.mormee-official-logo{display:none !important}
+
+.mormee-hero-visual{
+  min-height:680px !important;
+  background-image:url("brand-mormee-hero.png") !important;
+  background-size:auto 122% !important;
+  background-position:right center !important;
+  background-repeat:no-repeat !important;
+  background-color:#f8f4fb !important;
+}
+.mormee-hero h1{
+  white-space:nowrap !important;
+  font-size:clamp(26px,2.55vw,39px) !important;
+}
+@media(max-width:900px){
+  .mormee-logo-lockup{width:min(360px,86%)}
+  .mormee-logo-word{font-size:60px}
+  .mormee-hero h1{white-space:normal !important}
+  .mormee-hero-visual{
+    min-height:500px !important;
+    background-size:auto 118% !important;
+    background-position:82% center !important;
+  }
+}
+@media(max-width:600px){
+  .mormee-logo-lockup{width:min(300px,88%);margin-bottom:24px}
+  .mormee-logo-word{font-size:50px}
+  .mormee-logo-tagline{font-size:13px}
+  .mormee-sun-mark{transform:scale(.86);margin-bottom:-2px}
+  .mormee-hero h1{
+    font-size:27px !important;
+    line-height:1.55 !important;
+  }
+  .mormee-hero-visual{
+    min-height:380px !important;
+    background-size:auto 112% !important;
+    background-position:88% center !important;
+  }
+}
