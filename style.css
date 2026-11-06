@@ -1226,3 +1226,38 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
     padding-top: 22px;
   }
 }
+
+
+/* =========================================================
+   mormee 2027.1.25 DEBUT
+   Keeps the existing BRAND visual while replacing the old
+   COMING SOON area visually with the confirmed launch date.
+   ========================================================= */
+.brand-approved-hero{position:relative}
+.brand-debut-date{
+  position:absolute;
+  left:50%;
+  bottom:5.8%;
+  transform:translateX(-50%);
+  z-index:2;
+  min-width:300px;
+  padding:10px 18px 12px;
+  background:rgba(248,245,250,.96);
+  color:#9176ac;
+  font-family:Arial,sans-serif;
+  font-size:22px;
+  font-weight:500;
+  line-height:1.2;
+  letter-spacing:.24em;
+  text-align:center;
+  white-space:nowrap;
+}
+@media(max-width:700px){
+  .brand-debut-date{
+    bottom:5.2%;
+    min-width:220px;
+    padding:7px 10px 9px;
+    font-size:13px;
+    letter-spacing:.16em;
+  }
+}
