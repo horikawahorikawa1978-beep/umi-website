@@ -1579,3 +1579,51 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
     background-position:88% center !important;
   }
 }
+/* =========================================================
+   mormee BRAND final
+   One hero image only
+   ========================================================= */
+
+.brand-single-hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #f7f3fb;
+}
+
+.brand-single-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* BRAND current navigation */
+.navlinks .is-current {
+  position: relative;
+}
+
+.navlinks .is-current::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  width: 34px;
+  height: 1px;
+  background: var(--gold);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 700px) {
+
+  .brand-single-hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .navlinks .is-current::after {
+    display: none;
+  }
+
+}
