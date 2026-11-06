@@ -1425,3 +1425,31 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
   .mormee-closing-logo{font-size:44px}
   .mormee-closing-date{font-size:19px;letter-spacing:.12em}
 }
+
+
+/* BRAND hero final: official logo + product-only visual */
+.mormee-official-logo{
+  display:block;
+  width:min(360px,80%);
+  height:auto;
+  margin:0 auto;
+  mix-blend-mode:multiply;
+}
+.mormee-hero-visual{
+  min-height:680px !important;
+  background-image:url("mormee-product-hero.jpg") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+@media(max-width:900px){
+  .mormee-official-logo{width:min(330px,84%)}
+  .mormee-hero-visual{min-height:500px !important}
+}
+@media(max-width:600px){
+  .mormee-official-logo{width:min(280px,88%)}
+  .mormee-hero-visual{
+    min-height:360px !important;
+    background-position:66% center !important;
+  }
+}
