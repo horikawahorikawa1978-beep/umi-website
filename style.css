@@ -1261,3 +1261,164 @@ footer{background:var(--deep);color:#fff;padding:24px 0 14px}
     letter-spacing:.16em;
   }
 }
+
+
+/* =========================================================
+   mormee BRAND PAGE v2 — 2026.11.06
+   World view → features → ingredients → usage → launch
+   ========================================================= */
+.mormee-brand-page{background:#fff;color:var(--deep)}
+.mormee-hero{
+  min-height:680px;display:grid;grid-template-columns:44% 56%;
+  background:linear-gradient(135deg,#fbf9fd 0%,#f4edf9 48%,#fff9f3 100%);
+  overflow:hidden
+}
+.mormee-hero-copy{
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  padding:70px 42px;text-align:center;position:relative;z-index:2
+}
+.mormee-sun{margin:0;color:#9a82b7;font-size:38px;line-height:1}
+.mormee-wordmark{
+  margin:4px 0 0;color:#987fb4;font-family:Arial,sans-serif;
+  font-size:clamp(54px,6vw,82px);font-weight:300;line-height:1;letter-spacing:.06em
+}
+.mormee-hero-tag{
+  margin:13px 0 0;color:#8f75ad;font-family:Georgia,serif;
+  font-size:16px;letter-spacing:.14em
+}
+.mormee-hero-line{width:44px;height:1px;background:var(--gold);margin:34px 0}
+.mormee-hero h1{
+  margin:0;color:#8f75ad;font-size:clamp(30px,3.3vw,48px);
+  font-weight:400;line-height:1.55;letter-spacing:.05em
+}
+.mormee-product-name{margin:29px 0 0;color:#80669d;font-size:17px;letter-spacing:.08em}
+.mormee-product-en{
+  margin:8px 0 0;color:#9078aa;font-family:Arial,sans-serif;
+  font-size:11px;font-weight:700;letter-spacing:.24em
+}
+.mormee-debut{
+  margin:42px 0 0;color:#725688;font-family:Georgia,serif;
+  font-size:22px;letter-spacing:.18em
+}
+.mormee-hero-visual{
+  min-height:680px;background-image:
+  linear-gradient(90deg,rgba(247,242,250,.32),rgba(255,255,255,0) 28%),
+  url("brand-visual.jpg");
+  background-size:cover;background-position:center center;background-repeat:no-repeat
+}
+
+.mormee-section-wrap{width:min(1080px,calc(100% - 48px));margin:0 auto}
+.mormee-section-kicker{
+  margin:0 0 14px;color:var(--gold);font-family:Arial,sans-serif;
+  font-size:11px;font-weight:700;letter-spacing:.24em
+}
+.mormee-section-heading{text-align:center;margin-bottom:44px}
+.mormee-section-heading h2,.mormee-intro h2{
+  margin:0;color:var(--deep);font-size:clamp(27px,3vw,39px);
+  font-weight:400;line-height:1.65;letter-spacing:.05em
+}
+.mormee-section-heading>p:last-child{
+  margin:17px auto 0;max-width:680px;color:#60778e;font-size:14px;line-height:1.9
+}
+
+.mormee-intro{padding:92px 0 96px;text-align:center;background:#fff}
+.mormee-intro-lead{
+  margin:30px auto 0;max-width:790px;color:#526f8d;font-size:15px;
+  line-height:2.15;letter-spacing:.04em
+}
+
+.mormee-features{padding:90px 0 98px;background:#faf8fc}
+.mormee-feature-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:1px;
+  background:rgba(145,118,172,.17);border:1px solid rgba(145,118,172,.17)
+}
+.mormee-feature-grid article{
+  min-height:260px;background:#fff;padding:34px 23px;text-align:center
+}
+.mormee-feature-grid span{
+  display:block;color:#c1acd9;font-family:Georgia,serif;font-size:30px;margin-bottom:22px
+}
+.mormee-feature-grid h3{
+  margin:0 0 15px;color:#80669d;font-size:18px;font-weight:400;letter-spacing:.05em
+}
+.mormee-feature-grid p{margin:0;color:#65798e;font-size:12px;line-height:1.9}
+
+.mormee-complex{padding:92px 0 98px;background:#fff}
+.mormee-ingredient-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px
+}
+.mormee-ingredient-grid article{
+  padding:30px 24px;text-align:center;border:1px solid #eee8f3;
+  background:linear-gradient(145deg,#fff,#fbf9fd)
+}
+.mormee-ingredient-grid h3{
+  margin:0;color:#80669d;font-size:19px;font-weight:400;letter-spacing:.04em
+}
+.mormee-ingredient-grid p{margin:9px 0 0;color:#78899b;font-size:12px;line-height:1.6}
+.mormee-ingredient-note{
+  margin:24px 0 0;text-align:center;color:#9099a2;font-size:10px;line-height:1.7
+}
+
+.mormee-scenes{padding:90px 0 100px;background:linear-gradient(130deg,#fbf9fd,#f5eff9)}
+.mormee-scene-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.mormee-scene-grid div{
+  min-height:170px;padding:30px 18px;background:rgba(255,255,255,.82);
+  border:1px solid rgba(145,118,172,.16);text-align:center
+}
+.mormee-scene-grid span{
+  display:block;margin-bottom:17px;color:#b59ccc;font-family:Georgia,serif;font-size:24px
+}
+.mormee-scene-grid p{
+  margin:0;color:#725e8b;font-size:16px;line-height:1.8;letter-spacing:.06em
+}
+
+.mormee-closing{
+  padding:100px 24px 105px;text-align:center;
+  background:linear-gradient(120deg,#fff 0%,#f7f1fa 50%,#fff9f2 100%)
+}
+.mormee-closing-logo{
+  margin:0;color:#9a82b7;font-family:Arial,sans-serif;
+  font-size:52px;font-weight:300;letter-spacing:.06em
+}
+.mormee-closing-tag{margin:8px 0 0;color:#8f75ad;font-family:Georgia,serif;letter-spacing:.13em}
+.mormee-closing h2{
+  margin:30px 0 0;color:#80669d;font-size:clamp(30px,3.2vw,44px);
+  font-weight:400;letter-spacing:.06em
+}
+.mormee-closing-line{width:42px;height:1px;background:var(--gold);margin:30px auto}
+.mormee-closing-date{
+  margin:0;color:#725688;font-family:Georgia,serif;font-size:24px;letter-spacing:.18em
+}
+.mormee-closing-product{margin:17px 0 0;color:#76879a;font-size:12px;letter-spacing:.08em}
+
+@media(max-width:900px){
+  .mormee-hero{grid-template-columns:1fr;min-height:auto}
+  .mormee-hero-copy{padding:64px 24px 58px}
+  .mormee-hero-visual{min-height:480px;background-position:center center}
+  .mormee-feature-grid{grid-template-columns:repeat(2,1fr)}
+  .mormee-feature-grid article:last-child{grid-column:1/-1}
+  .mormee-ingredient-grid{grid-template-columns:repeat(2,1fr)}
+  .mormee-scene-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .mormee-section-wrap{width:calc(100% - 34px)}
+  .mormee-hero-copy{padding:52px 20px 48px}
+  .mormee-wordmark{font-size:55px}
+  .mormee-hero h1{font-size:30px}
+  .mormee-product-name{font-size:15px}
+  .mormee-debut{font-size:18px;letter-spacing:.12em}
+  .mormee-hero-visual{min-height:360px;background-position:62% center}
+  .mormee-intro,.mormee-features,.mormee-complex,.mormee-scenes{padding:64px 0 70px}
+  .mormee-intro-lead{font-size:13px;text-align:left}
+  .mormee-intro-lead br{display:none}
+  .mormee-feature-grid{grid-template-columns:1fr}
+  .mormee-feature-grid article:last-child{grid-column:auto}
+  .mormee-feature-grid article{min-height:0;padding:28px 24px}
+  .mormee-ingredient-grid{grid-template-columns:1fr}
+  .mormee-scene-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .mormee-scene-grid div{min-height:145px;padding:24px 10px}
+  .mormee-scene-grid p{font-size:14px}
+  .mormee-closing{padding:70px 18px 76px}
+  .mormee-closing-logo{font-size:44px}
+  .mormee-closing-date{font-size:19px;letter-spacing:.12em}
+}
